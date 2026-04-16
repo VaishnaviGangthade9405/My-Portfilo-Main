@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<title>Portfolio</title>
+
+
+
+<link rel="stylesheet" href="style.css">
+
+
+
+<link rel="stylesheet"
+
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- NAVBAR -->
+
+
+
+<nav class="navbar">
+
+
+
+<div class="logo">&lt;Portfolio/&gt;</div>
+
+
+
+<ul class="nav-links">
+
+<li><a href="#home">01. Home</a></li>
+
+<li><a href="#skills">02. Skills</a></li>
+
+<li><a href="#projects">03. Projects</a></li>
+
+<li><a href="#experience">04. Experience</a></li>
+
+<li><a href="#contact">05. Contact</a></li>
+
+</ul>
+
+
+
+</nav>
+
+
+
+
+
+<!-- HERO -->
+
+
+
+<section id="home" class="hero">
+
+
+
+<p class="tag">Hello, I'm a Developer</p>
+
+
+
+<h1>
+
+Crafting <span>Digital</span><br>
+
+Experiences
+
+</h1>
+
+
+
+<p class="desc">
+
+I design and build exceptional digital experiences that are fast,
+
+accessible, and visually appealing.
+
+</p>
+
+
+
+<div class="buttons">
+
+
+
+<a href="#projects" class="btn primary">View My Work</a>
+
+<a href="#contact" class="btn outline">Contact Me</a>
+
+
+
+</div>
+
+
+
+<div class="social">
+
+
+
+<i class="fab fa-github"></i>
+
+<i class="fab fa-linkedin"></i>
+
+<i class="fab fa-twitter"></i>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<section id="skills" class="skills-section">
+
+    <div class="skills-container">
+
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="title-underline"></div>
+
+
+
+        <div class="filter-tabs">
+
+            <button class="tab-btn active" onclick="filterSkills('all')">All</button>
+
+            <button class="tab-btn" onclick="filterSkills('frontend')">Frontend</button>
+
+            <button class="tab-btn" onclick="filterSkills('backend')">Backend</button>
+
+            <button class="tab-btn" onclick="filterSkills('devops')">DevOps</button>
+
+            <button class="tab-btn" onclick="filterSkills('cloud')">Cloud</button>
+
+        </div>
+
+
+
+        <div class="skills-grid" id="skillsGrid">
+
+            <div class="skill-card frontend"><i class="fab fa-react"></i><span>React.js</span></div>
+
+            <div class="skill-card frontend"><i class="fas fa-code"></i><span>Next.js</span></div>
+
+            <div class="skill-card frontend"><i class="fab fa-js"></i><span>TypeScript</span></div>
+
+            <div class="skill-card frontend"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+
+            <div class="skill-card frontend"><i class="fab fa-css3-alt"></i><span>Tailwind CSS</span></div>
+
+            <div class="skill-card frontend"><i class="fab fa-html5"></i><span>HTML/CSS</span></div>
+
+            <div class="skill-card frontend"><i class="fab fa-python"></i><span>Python</span></div>
+
+
+
+            <div class="skill-card backend"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+
+            <div class="skill-card backend"><i class="fas fa-database"></i><span>Redis</span></div>
+
+            <div class="skill-card backend"><i class="fas fa-leaf"></i><span>Express.js</span></div>
+
+            <div class="skill-card backend"><i class="fas fa-project-diagram"></i><span>Kafka</span></div>
+
+            <div class="skill-card backend"><i class="fas fa-database"></i><span>PostgreSQL</span></div>
+
+            <div class="skill-card backend"><i class="fas fa-database"></i><span>MySQL</span></div>
+
+            <div class="skill-card backend"><i class="fas fa-server"></i><span>MongoDB</span></div>
+
+
+
+            <div class="skill-card devops"><i class="fab fa-docker"></i><span>Docker</span></div>
+
+            <div class="skill-card devops"><i class="fas fa-dharmachakra"></i><span>Kubernetes</span></div>
+
+            <div class="skill-card devops"><i class="fas fa-chart-line"></i><span>Prometheus</span></div>
+
+            <div class="skill-card devops"><i class="fas fa-tachometer-alt"></i><span>Grafana</span></div>
+
+            <div class="skill-card devops"><i class="fab fa-git-alt"></i><span>Git</span></div>
+
+            <div class="skill-card devops"><i class="fas fa-infinity"></i><span>CI/CD</span></div>
+
+
+
+            <div class="skill-card cloud"><i class="fab fa-aws"></i><span>AWS</span></div>
+
+            <div class="skill-card cloud"><i class="fas fa-cloud"></i><span>Serverless</span></div>
+
+        </div>
+
+    </div>
+
+ 
+
+</section>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+<section id="projects" class="projects">
+
+    <div class="projects-container">
+
+        <h2 class="title">My Projects</h2>
+
+        <div class="underline"></div>
+
+       
+
+        <p class="description">
+
+            Here are some of my recent projects. Each project reflects my passion for
+
+            creating user-friendly and performant applications.
+
+        </p>
+
+
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+
+                <div class="card-header">
+
+                    <h3>Professional Services Platform</h3>
+
+                    <div class="github-icon"><i class="fab fa-github"></i></div>
+
+                </div>
+
+                <p>
+
+                    A multinational Corporation known for wireless tech & innovation.
+
+                    Implemented secure authentication and role-based access via FastAPI backend.
+
+                </p>
+
+                <div class="tech-stack">
+
+                    <span>FastAPI</span>
+
+                    <span>Python</span>
+
+                    <span>PostgreSQL</span>
+
+                    <span>Auth0</span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="project-card">
+
+                <div class="card-header">
+
+                    <h3>AI Activity Detection</h3>
+
+                    <div class="github-icon"><i class="fab fa-github"></i></div>
+
+                </div>
+
+                <p>
+
+                    AI-based CCTV system detecting crowd aggression and trespassing.
+
+                    Benchmarked Qwen2.5-VL and Gemini Flash for real-time performance.
+
+                </p>
+
+                <div class="tech-stack">
+
+                    <span>Python</span>
+
+                    <span>Gemini Flash</span>
+
+                    <span>OpenCV</span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="project-card">
+
+                <div class="card-header">
+
+                    <h3>Ransomware Detection</h3>
+
+                    <div class="github-icon"><i class="fab fa-github"></i></div>
+
+                </div>
+
+                <p>
+
+                    Machine learning based system that detects ransomware activity
+
+                    by monitoring file system behavior and modification patterns.
+
+                </p>
+
+                <div class="tech-stack">
+
+                    <span>ML</span>
+
+                    <span>Scikit-learn</span>
+
+                    <span>Pandas</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="view-more">
+
+            <a href="#" class="github-btn">View More on GitHub</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="experience" class="experience">
+
+    <div class="experience-header">
+
+        <h2 class="title">Work Experience</h2>
+
+        <div class="underline"></div>
+
+        <p class="description">
+
+            My professional journey has equipped me with a diverse skill set and valuable experience working across different technologies and environments.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="timeline">
+
+        <div class="timeline-line"></div>
+
+
+
+        <div class="timeline-item left">
+
+            <div class="timeline-dot"></div>
+
+            <div class="experience-card">
+
+                <span class="date">May 2025 – July 2025</span>
+
+                <h3>Interim Engineering Intern</h3>
+
+                <h4 class="company">Branzhive Infotech Pvt. Ltd</h4>
+
+                <ul>
+
+                    <li>Built ML model using Python, Pandas, and Scikit-learn to detect fraudulent financial transactions.</li>
+
+                    <li>Applied classification algorithms such as Logistic Regression and Random Forest.</li>
+
+                    <li>Evaluated model performance using accuracy, precision and recall.</li>
+
+                </ul>
+
+                <div class="tech-stack">
+
+                    <span>Python</span>
+
+                    <span>Pandas</span>
+
+                    <span>Scikit-learn</span>
+
+                    <span>ML</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="timeline-item right">
+
+            <div class="timeline-dot"></div>
+
+            <div class="experience-card">
+
+                <span class="date">Academic Project</span>
+
+                <h3>Cloud-Based Data Processing</h3>
+
+                <h4 class="company">Data Pipeline Project</h4>
+
+                <ul>
+
+                    <li>Designed cloud system for storing and processing large datasets using AWS services.</li>
+
+                    <li>Built data processing pipelines using Python for automated insights.</li>
+
+                    <li>Visualized complex data patterns using Power BI dashboards.</li>
+
+                </ul>
+
+                <div class="tech-stack">
+
+                    <span>AWS</span>
+
+                    <span>Python</span>
+
+                    <span>Power BI</span>
+
+                    <span>Cloud</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="timeline-item left">
+
+            <div class="timeline-dot"></div>
+
+            <div class="experience-card">
+
+                <span class="date">Achievement / Leadership</span>
+
+                <h3>Organizer - HackVerse PCCOE</h3>
+
+                <h4 class="company">Achievements in Development</h4>
+
+                <ul>
+
+                    <li>Coordinator of the Largest Student-Organized Hackathon.</li>
+
+                    <li>Led a team to ensure smooth workflow and innovation during the event.</li>
+
+                </ul>
+
+                <div class="tech-stack">
+
+                    <span>Management</span>
+
+                    <span>Leadership</span>
+
+                    <span>Development</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section style="padding: 50px; background: #0a192f; color: white; text-align: center; border: 1px dashed #00cfb4; margin: 20px;">
+    <h2 style="color: #00cfb4;">Share Your Thoughts</h2>
+    <p>Feedback & Suggestions</p>
+    
+    <form action="/contact" method="POST" style="max-width: 500px; margin: auto;">
+        <input type="email" name="userEmail" placeholder="Enter Email" required 
+            style="width: 100%; padding: 10px; margin-top: 10px; border-radius: 5px; border: none;">
+        
+        <textarea name="userMessage" placeholder="Enter Message" required 
+            style="width: 100%; padding: 10px; margin-top: 10px; border-radius: 5px; border: none; height: 100px;"></textarea>
+        
+        <button type="submit" style="background: #00cfb4; color: #0a192f; padding: 10px 20px; border: none; margin-top: 15px; cursor: pointer; font-weight: bold; border-radius: 5px;">
+            Submit
+        </button>
+    </form>
+</section>
+
+
+
+
+
+<footer id="contact" class="footer">
+
+    <div class="footer-container">
+
+       
+
+        <div class="contact-header">
+
+            <h2 class="contact-title">Get In Touch</h2>
+
+            <div class="underline"></div>
+
+        </div>
+
+
+
+        <p class="contact-desc">
+
+            Have a project in mind or want to discuss potential opportunities? I'd love to hear from you!<br>
+
+            Feel free to reach out through my contact information below.
+
+        </p>
+
+
+
+        <div class="contact-grid">
+
+            <div class="contact-item">
+
+                <div class="icon-square"><i class="fas fa-envelope"></i></div>
+
+                <div class="info">
+
+                    <span class="label">Email</span>
+
+                    <p class="value">vaishugangthade05@gmail.com</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="contact-item">
+
+                <div class="icon-square"><i class="fas fa-map-marker-alt"></i></div>
+
+                <div class="info">
+
+                    <span class="label">Location</span>
+
+                    <p class="value">Pune, India</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="contact-item">
+
+                <div class="icon-square"><i class="fas fa-phone-alt"></i></div>
+
+                <div class="info">
+
+                    <span class="label">Phone</span>
+
+                    <p class="value">+91 9405966248</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <div class="footer-logo">&lt;Portfolio/&gt;</div>
+
+            <div class="footer-socials">
+
+                <a href="#"><i class="fab fa-github"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+
+                <a href="#"><i class="fab fa-twitter"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
